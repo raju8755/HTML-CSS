@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>home</title>
+    <style>
+        button:disabled {
+         background-color: red;
+         color: white;
+         cursor:not-allowed ;
+        }
+        button:enabled{
+            background-color: green;
+            color: white;
+            cursor: grab;
+        }
+        .note {
+width: 100;
+height: 200;
+text-align: justify;
+background-color: lightgrey;
+overflow: scroll;
+        }
+/* adjasent selector */
+        input[type="checkbox"]+span {
+            color: red;
+        }
+   input[type="checkbox"]:checked+span  {
+color: green;
+   }
+   input[type="radio"]+span{
+        color: gray;
+   }
+   input[type="radio"]:checked+span{
+       color: green;
+       border: 1px solid ;
+   }
+    </style>
+</head>
+<body>
+   <form>
+Name :
+<input type="text" placeholder="enter the name">
+<button enabled>Submit</button>
+   </form>
+   <fieldset>
+    <legend>Choose Payment</legend>
+    <input type="radio" name="pay"><span>Cash</span>
+    <input type="radio" name="pay"><span>CraditCard</span>
+    <input type="radio" name="pay"><span>UPI</span>
+</fieldset> 
+   <fieldset>
+      
+       <legend> Term of Service</legend>
+           <div class="note">
+              <p>
+                I agree that during and after my employment with the company, I will not disclose in writings made, conceived or
+                produced by me either alone or together with others while an employee of the company. This obligation shall exist as
+                to any creative property and writings whether or not I believe it would become property of the company under any
+                fully from another after my employment with the company.
+                I agree that during and after my employment with the company, I will not disclose in writings made, conceived or
+                produced by me either alone or together with others while an employee of the company. This obligation shall exist as
+                to any creative property and writings whether or not I believe it would become property of the company under any
+                fully from another after my employment with the company.
+                I agree that during and after my employment with the company, I will not disclose in writings made, conceived or
+                produced by me either alone or together with others while an employee of the company. This obligation shall exist as
+                to any creative property and writings whether or not I believe it would become property of the company under any
+                fully from another after my employment with the company.
+                
+              </p>
+           </div>
+           <input type="checkbox"><span>I Accept</span>
+      
+   </fieldset>
+  
+</body>
+
+</html> 

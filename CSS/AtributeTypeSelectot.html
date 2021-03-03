@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>ATRIBUTE TYPE SELECTOR</title>
+    <style>
+        /* input[type=password]{
+            background-color: yellow;
+
+        } */
+        input[type=button]{
+            background-color:lightgreen;
+        }
+        p[class ~=para]{
+            color: lime;
+        }
+        a:visited {
+            color: gray;
+        }
+       a:active {
+           color: maroon;
+       } 
+       a:hover {
+           color: indigo;
+       }
+       input:focus {
+           border: 2px solid green;
+           box-shadow: 2px 2px 2px green ;
+       }
+       :hover{
+
+       }
+
+    </style>
+</head>
+<body>
+    <form>
+
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text"></dd>
+            <dt>Passward</dt>
+            <dd><input type="password"></dd>
+        </dl>
+        <input type="button" value="Submit">
+        <input type="button" value="Submit">
+    </form>
+   <!-- <p class ="paraEffect">para-1</p>
+    <p class ="para-Effect">para-1</p>
+    <p class ="Effect">para-1</p>
+    <p class ="para Effect">para-4</p>
+ <a href="AtributeTypeSelectot.html">Sample</a>
+<a href="AtributeTypeSelectot.html">home</a>
+<a href="AtributeTypeSelectot.html">contact</a> -->
+</body>
+
+
+</html>
